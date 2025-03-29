@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Tables</title>
+  </head>
+  <body>
+    <h3>HTML Tables understanding colspan and rowspan </h3>
+    <table border="3">
+        <h4>Using rowspan for employee with same designation</h4>
+      <tr>
+        <th>Employee  Name</th>
+        <th>Age</th>
+        <th>Phone No</th>
+        <th>Designation</th>
+      </tr>
+      <tr>
+        <td>Anil</td>
+        <td>23</td>
+        <td>9649087123</td>
+        <!-- 2 rowspan-->
+        <td rowspan="2">Software Developer</td>
+      </tr>
+       <tr>
+        <td>Alex</td>
+        <td>35</td>
+        <td>9135780123</td>
+      </tr>
+      <tr>
+        <td>Alex</td>
+        <td>35</td>
+        <td>9135780123</td>
+        <!-- 2 rowspan-->
+        <td rowspan="2">Python Developer</td>
+      </tr>
+      <tr>
+        <td>Alex</td>
+        <td>35</td>
+        <td>9135780123</td>
+      </tr>
+    </table>
+
+    <h2>Example of Table with Colspan</h2>
+
+    <table border="3">
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>$1</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>$1</td>
+            <td>10</td>
+        </tr>
+
+        <!-- Row 2 with Colspan -->
+        <tr>
+            <td colspan="3">Total: $20</td> <!-- This cell spans across all 3 columns -->
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+            <td>Chips</td>
+            <td>$0.5</td>
+            <td>1</td>
+        </tr>
+        <td>Chocolate</td>
+        <td>$0.5</td>
+        <td>1</td>
+
+         
+          <tr>
+            <td colspan="3">Total: $20</td> <!-- This cell spans across all 3 columns -->
+        </tr>
+
+    </table>
+  </body>
+</html>
